@@ -98,7 +98,7 @@
         <field name="register_payment" eval="0" />
         <field name="payment_filter_id" ref="automatic_workflow_payment_filter" />
     </record>
-    <record forcecreate="True" id="ir_cron_automatic_workflow_job" model="ir.cron">
+    <record id="ir_cron_automatic_workflow_job" model="ir.cron">
         <field name="name">Automatic Workflow Job</field>
         <field ref="model_automatic_workflow_job" name="model_id" />
         <field name="state">code</field>
